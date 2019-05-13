@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.cmdValider = new System.Windows.Forms.Button();
             this.txt2 = new System.Windows.Forms.Label();
+            this.cmdQuit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +58,7 @@
             // cmdValider
             // 
             this.cmdValider.Enabled = false;
-            this.cmdValider.Location = new System.Drawing.Point(143, 144);
+            this.cmdValider.Location = new System.Drawing.Point(12, 292);
             this.cmdValider.Name = "cmdValider";
             this.cmdValider.Size = new System.Drawing.Size(116, 42);
             this.cmdValider.TabIndex = 2;
@@ -74,11 +76,22 @@
             this.txt2.TabIndex = 3;
             this.txt2.Text = "...";
             // 
+            // cmdQuit
+            // 
+            this.cmdQuit.Image = ((System.Drawing.Image)(resources.GetObject("cmdQuit.Image")));
+            this.cmdQuit.Location = new System.Drawing.Point(214, 74);
+            this.cmdQuit.Name = "cmdQuit";
+            this.cmdQuit.Size = new System.Drawing.Size(297, 262);
+            this.cmdQuit.TabIndex = 4;
+            this.cmdQuit.UseVisualStyleBackColor = true;
+            this.cmdQuit.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 346);
+            this.ClientSize = new System.Drawing.Size(553, 348);
+            this.Controls.Add(this.cmdQuit);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.cmdValider);
             this.Controls.Add(this.txt1);
@@ -97,6 +110,7 @@
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Button cmdValider;
         private System.Windows.Forms.Label txt2;
+        private System.Windows.Forms.Button cmdQuit;
     }
 }
 
